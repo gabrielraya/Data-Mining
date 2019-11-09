@@ -1,5 +1,5 @@
-# Dataset
-Project/histopathologic-cancer-detection/*
+# Project dataset
+Project/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
