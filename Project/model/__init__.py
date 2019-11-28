@@ -1,6 +1,3 @@
 import torch
-from model.builder import build_model
-from model.equivariant_layer import EquivariantLayer
-
-standard = build_model(conv_layer_type=torch.nn.Conv2d)
-equivariant = build_model(conv_layer_type=EquivariantLayer)
+from model.standard import StandardModel as Standard
+from model.equivariant import EquivariantModel as Equivariant
