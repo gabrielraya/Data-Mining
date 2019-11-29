@@ -20,5 +20,5 @@ def StandardModel(load_from=None):
         torch.nn.Linear(256, 2)
     )
     if load_from is not None:
-        result.load_state_dict(load_from)
+        result.load_state_dict(torch.load(load_from))
     return result

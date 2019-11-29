@@ -7,7 +7,7 @@ class EquivariantModel(torch.nn.Module):
         super(EquivariantModel, self).__init__()
         self.standard = StandardModel()
         if load_from is not None:
-            self.load_state_dict(load_from)
+            self.load_state_dict(torch.load(load_from))
 
     def forward(self, inputs):
         rotoflips = all_flips(inputs) + all_flips(inputs.permute(0, 1, 3, 2))
