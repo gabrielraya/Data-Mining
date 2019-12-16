@@ -28,5 +28,4 @@ def undo_rotoflips(images):
 
 def apply_flips(images):
     assert len(images) == 4
-    axes = [[], [-1], [-2], [-1, -2]]
-    return [torch.flip(image, axis) for image, axis in zip(images, axes)]
+    return [images[0], torch.flip(images[1], [-1]), torch.flip(images[2], [-2]), torch.flip(images[3], [-1, -2])]
