@@ -4,7 +4,7 @@ from data.dataset import Dataset
 
 
 image_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'train')
-all_file_names = os.listdir(image_dir)
+all_file_names = sorted(os.listdir(image_dir))
 train_file_names = all_file_names[:-256]
 valid_file_names = all_file_names[len(train_file_names):]
 
