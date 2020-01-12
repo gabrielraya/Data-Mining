@@ -13,4 +13,4 @@ train = Dataset(image_dir, train_file_names)
 valid = Dataset(image_dir, valid_file_names)
 
 train_loader = torch.utils.data.DataLoader(train, 32, shuffle=True, num_workers=2)
-valid_loader = torch.utils.data.DataLoader(valid, 32, shuffle=True, num_workers=2)
+valid_loader = torch.utils.data.DataLoader(valid, 32, shuffle=False, num_workers=2)
