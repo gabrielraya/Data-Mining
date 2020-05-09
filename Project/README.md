@@ -14,7 +14,7 @@ yields an AUC score of 0.8949 while traditional convolutions yield 0.8823.
 
 
 
-The data use comes from the [Kaggle competition, Histopathologic Cancer Detection](https://www.kaggle.com/c/histopathologic-cancer-detection)[1], which
+The data comes from the [Kaggle competition, Histopathologic Cancer Detection](https://www.kaggle.com/c/histopathologic-cancer-detection)[1], which
 is a slightly modified version of the [PatchCamelyon (PCam) benchmark dataset](https://github.com/basveeling/pcam) [2].
 
 
